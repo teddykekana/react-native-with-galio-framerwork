@@ -1,0 +1,12 @@
+{
+  "name": "react-native-with-galio-framework",
+  "displayName": "react-native-with-galio-framework",
+  "expo": {
+    "name": "react-native-with-galio-framework",
+    "slug": "react-native-with-galio-framework",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
