@@ -1,6 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
 import React, { Fragment, useState } from 'react';
-import { Text, Switch, Block, Slider } from 'galio-framework';
+import { Text, Switch, Block, Slider, Accordion } from 'galio-framework';
 import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
 import { styles } from './src/styles';
@@ -13,6 +12,18 @@ const fetchFonts = async () => {
     'open-sans-light': require('./src/assets/fonts/OpenSans-Light.ttf'),
   });
 }
+
+const data = [
+  { title: "First Chapter", content: "Lorem ipsum dolor sit amet", 
+    icon: {
+      name: 'keyboard-arrow-up',
+      family: 'material',
+      size: 16,
+    } 
+  },
+  { title: "2nd Chapter", content: "Lorem ipsum dolor sit amet" },
+  { title: "3rd Chapter", content: "Lorem ipsum dolor sit amet" }
+];
 
 function App() {
 
@@ -52,6 +63,14 @@ function App() {
               onValueChange={value => {
                   setSlider(Math.floor(value));
               }}
+            />
+          </Block>
+          <Block style={{ height: 200, marginTop: 20 }}>
+            <Text style={styles({"toggle": toggle}).appText}>Accordion Example</Text>
+            <Accordion 
+              contentStyle={{color: toggle ? '#fff' : '#333'}} 
+              style={styles({"toggle": toggle}).accordion} 
+              dataArray={data} 
             />
           </Block>
         </Block>

@@ -19,4 +19,8 @@ export const styles = (props = {}) => StyleSheet.create({
         width: 200,
         marginTop: 20,
     },
+    accordion: {
+        backgroundColor: props.toggle ? '#06bcee' : '#fff',
+        color: props.toggle ? 'green' : '#333',
+    }
 });
