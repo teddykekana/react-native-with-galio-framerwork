@@ -4,6 +4,7 @@
 
 ### Pre-requisites
 * Expo
+* Xcode / Android Studio
 
 ### Installation
 
