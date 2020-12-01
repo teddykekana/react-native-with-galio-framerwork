@@ -42,7 +42,7 @@ function App() {
               }}
           />
           <Block style={styles().sliderBlock}>
-            <Text style={styles({"toggle": toggle}).appText}>Slider Example {slider}</Text>
+            <Text style={styles({"toggle": toggle}).appText}>Slider Example: {slider}</Text>
             <Slider
               maximumValue={30}
               value={slider}

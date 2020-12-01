@@ -10,7 +10,7 @@ export const styles = (props = {}) => StyleSheet.create({
     },
     appText: {
         marginBottom: 20,
-        color: props.toggle ? '#06bcee' : '#333'
+        color: props.toggle ? '#fff' : '#333'
     },
     appSlider: {
         width: '10px'
