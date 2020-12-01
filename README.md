@@ -2,9 +2,13 @@
 
 > Galio is a beautifully designed, Free and Open Source React Native Framework.
 
+### Pre-requisites
+* Expo
+
 ### Installation
 
 ```bash 
+npm install expo-cli --global
 git clone https://github.com/teddykekana/react-native-with-galio-framerwork.git
 cd react-native-with-galio-framerwork
 npm i
@@ -18,7 +22,7 @@ expo start --ios
 
 #### Android
 ```bash
-expo start --ios
+expo start --android
 ```
 
 Dark Theme                                                                               |  Light Theme
