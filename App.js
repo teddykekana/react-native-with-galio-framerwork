@@ -13,17 +13,20 @@ const fetchFonts = async () => {
   });
 }
 
-const data = [
-  { title: "First Chapter", content: "Lorem ipsum dolor sit amet", 
-    icon: {
-      name: 'keyboard-arrow-up',
-      family: 'material',
-      size: 16,
-    } 
-  },
-  { title: "2nd Chapter", content: "Lorem ipsum dolor sit amet" },
-  { title: "3rd Chapter", content: "Lorem ipsum dolor sit amet" }
-];
+const accordionData = toggle => {
+  return [
+    { title: "First Chapter", content: "Lorem ipsum dolor sit amet",
+      icon: {
+        name: 'keyboard-arrow-up',
+        family: 'material',
+        size: 16,
+        color: toggle ? '#333' : '#06bcee'
+      } 
+    },
+    { title: "2nd Chapter", content: "Lorem ipsum dolor sit amet" },
+    { title: "3rd Chapter", content: "Lorem ipsum dolor sit amet" }
+  ];
+}
 
 function App() {
 
@@ -70,7 +73,7 @@ function App() {
             <Accordion 
               contentStyle={{color: toggle ? '#fff' : '#333'}} 
               style={styles({"toggle": toggle}).accordion} 
-              dataArray={data} 
+              dataArray={accordionData(toggle)} 
             />
           </Block>
         </Block>
