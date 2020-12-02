@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { useState } from 'react';
 import { Text, Switch, Block, Slider, Accordion } from 'galio-framework';
 import * as Font from 'expo-font';
 import { AppLoading } from 'expo';
