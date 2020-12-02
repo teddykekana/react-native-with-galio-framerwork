@@ -43,7 +43,6 @@ function App() {
       ); 
   }
   return (
-      <Fragment>
         <Block style={styles({"toggle": toggle}).appBlock}>
           <Text style={styles({"toggle": toggle}).appText} p muted>React Native With Galio Framework</Text>
           <Text style={styles({"toggle": toggle}).appText}>Switch Example</Text>
@@ -77,7 +76,6 @@ function App() {
             />
           </Block>
         </Block>
-      </Fragment>
   );
 
 }
